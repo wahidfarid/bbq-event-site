@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-function initApp() {
+    function initApp() {
         // 1. Populate Hero Section
         document.getElementById('event-title').textContent = eventData.title;
         document.getElementById('event-date').textContent = eventData.date;
@@ -106,7 +106,5 @@ function initApp() {
         });
 
         map.fitBounds(bounds, { padding: [50, 50] });
-    }
-
     }
 });
