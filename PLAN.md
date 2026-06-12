@@ -24,28 +24,28 @@ A simple, bright, and colorful single-page website to provide information for an
 ## Implementation Roadmap (Current Progress)
 
 ### Phase 1: Scaffolding [COMPLETED]
-- [x] Create project directory and basic files.
+- [x] Create project directory and basic files (index.html, data.js, script.js, style.css).
 - [x] Set up basic HTML structure with Tailwind CSS and Leaflet.js.
 
 ### Phase 2: Data & Content [COMPLETED]
 - [x] Create `data.js` for locations and content.
-- [x] Define "Expectations" text content.
+- [x] Add "Expectations" text content.
 - [x] Integrate Tally.so Poll.
 
-### Phase 3: UI Development [IN PROGRESS]
-- [ ] Build the Hero section.
-- [ ] Build the Expectations cards.
-- [ ] Build the Location Cards (dynamic from `data.js`).
-- [ ] Build the Map container.
+### Phase 3: UI Development [COMPLETED]
+- [x] Build the Hero section.
+- [x] Build the Expectations cards.
+- [x] Build the Location Cards (dynamic from `data.js`).
+- [x] Build the Map container.
 
-### Phase 4: Interactive Features
-- [ ] Implement Leaflet.js map logic (popups, markers).
-- [ ] Integrate the "Open in Google Maps" functionality.
+### Phase 4: Interactive Features [COMPLETED]
+- [x] Implement Leaflet.js map logic (popups, markers).
+- [x] Integrate the "Open in Google Maps" functionality.
 
-### Phase 5: Finalization
-- [ ] Ensure mobile responsiveness.
-- [ ] Test map interactions and links.
-- [ ] Deploy to GitHub Pages.
+### Phase 5: Finalization [COMPLETED]
+- [x] Ensure mobile responsiveness.
+- [x] Test map interactions and links.
+- [x] Deploy to GitHub Pages.
 
 ## Constraints & Rules
 - **No Comments:** Do not add comments to the code unless requested.

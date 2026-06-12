@@ -1,9 +1,35 @@
 /* Custom Styles */
+
+body {
+    background-color: #f0f9ff;
+    background-image: radial-gradient(#94a3b8 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
 #map {
     z-index: 1;
 }
 
+/* Card Styling */
 .location-card:hover {
     transform: translateY(-5px);
     transition: transform 0.2s ease;
+}
+
+/* Hero Wave Effect */
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: white;
+    clip-path: ellipse(50% 50% at 50% 100%);
+}
+
+/* Icon Container */
+.icon-container {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
 }
