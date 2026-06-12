@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    function initApp() {
+function initApp() {
         // 1. Populate Hero Section
         document.getElementById('event-title').textContent = eventData.title;
         document.getElementById('event-date').textContent = eventData.date;
@@ -49,10 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // 3. Initialize Map
-        const map = L.map('map').setView([35.6895, 139.6917], 11);
+        const map = L.map('map');
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
+
+        const bounds = L.latLngBounds();
 
         const locationsGrid = document.getElementById('locations-grid');
         locationsGrid.innerHTML = ''; 
@@ -68,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             const marker = L.marker([loc.lat, loc.lng]).addTo(map);
             marker.bindPopup(markerPopupContent);
+            bounds.extend([loc.lat, loc.lng]);
 
             // 2. Create Card
             const card = document.createElement('div');
@@ -101,5 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             locationsGrid.appendChild(card);
         });
+
+        map.fitBounds(bounds, { padding: [50, 50] });
+    }
+
     }
 });
